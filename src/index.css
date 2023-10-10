@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .custom-slick-carousel {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-1 {
+  height: 100%;
+  width: 100%;
+} */
+
+/*
+.custom-slick-carousel .slick-list {
+  height: 100%;
+}
+
+.custom-slick-carousel .slick-list,
+.custom-slick-carousel .slick-track,
+.custom-slick-carousel .slick-track {
+  width: 100%;
+  height: 100%;
+} */
+
+/* .hero-1 {
+  height: 50vh;
+  overflow: hidden;
+  cursor: pointer;
+} */
+
+/* .hero-1 img {
+  transition: .3s ease-in;
+  height: 100%;
+} */
+
+.title__underline {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.title__underline:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120%;
+  background: black;
+}
+
+.core__values__bg {
+  background-image: url(./assets/images/veenocks-core-values.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.core__values__title {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: white;
+}
+
+.core__values__title:after {
+  content: "";
+  width: 30%;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 140%;
+  left: 0;
+}
+
+.product__card {
+  width: 100%;
+}
+
+.product__card__overlay {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.5s ease;
+  background-color: #201f1f;
+  opacity: 0.5;
+  transform-origin: 50%;
+}
+
+.product__card:hover .product__card__overlay {
+  height: 100%;
+}
+
+/* Add this to your CSS */
+.slick-dots {
+  display: none !important; /* Hide the dots */
+}
+
+.hero-1 {
+  overflow: hidden;
+}
+
+.carousel__slider {
+  width: 100%;
+  /* height: calc(100vh - 70px); */
+  position: relative;
+}
+
+.hero__img {
+  height: calc(100vh - 70px);
+  transition: transform 0.5s ease;
+}
+
+.mobile__core__values__bg {
+  background-image: url(./assets/images/veenocks-core-values.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our__background__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: black;
+}
+
+.our__background__title:after {
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 40%;
+  height: 2px;
+  background-color: black;
+}
+
+.our__vision {
+  background-image: url(./assets/images/vision-background.jpg);
+}
+
+@media screen and (max-width: 1360px) {
+  .title__underline,
+  .core__values__title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .hero__img {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__slider {
+    height: 350px;
+  }
+  .hero__img {
+    height: 350px;
+  }
+
+  .title__underline {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .hero__img {
+    height: 70vh;
+  }
+}

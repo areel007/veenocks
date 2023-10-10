@@ -1,0 +1,13 @@
+.about__us__banner {
+  background-image: url(../images/about-banner.jpg);
+  /* background-position: center; */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.factory__banner {
+  background-image: url(../images/factory-banner2.jpg);
+  /* background-position: center; */
+  /* background-size: cover; */
+}
