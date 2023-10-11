@@ -153,7 +153,7 @@ function App() {
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379447/posmoreti/12-Ferdey-Kirchen-P.jpg?_i=AA",
-      name: "pebble",
+      name: "peeble",
       to: "https://posmoreti.com/peeble/",
     },
     {
