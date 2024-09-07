@@ -11,7 +11,7 @@ function Contacts() {
     <>
       {/* Banner */}
       <div
-        className={`w-full h-[300px] md:h-[500px] 2xl:h-[520px] relative bg-fixed`}
+        className={`w-full h-[300px] md:h-[500px] 2xl:h-[500px] relative bg-fixed`}
       >
         <img
           src={Banner}
@@ -46,63 +46,69 @@ function Contacts() {
               </div>
 
               <form
-              className="w-[100%] lg:w-[400px]"
-              action="https://formsubmit.co/info@veenocks.ng"
-              method="POST"
-            >
-              <input type="hidden" name="_next" value="https://veenocks.ng" />
-              <div className="grid mb-[20px]">
-                <span className="block mb-[5px]">Name</span>
-                <input
-                  type="text"
-                  className="p-[10px] border border-black rounded"
-                  name="name"
-                />
-              </div>
+                className="w-[100%] lg:w-[400px]"
+                action="https://formsubmit.co/info@veenocks.ng"
+                method="POST"
+              >
+                <input type="hidden" name="_next" value="https://veenocks.ng" />
+                <div className="grid mb-[20px]">
+                  <span className="block mb-[5px]">Name</span>
+                  <input
+                    type="text"
+                    className="p-[10px] border border-black rounded"
+                    name="name"
+                  />
+                </div>
 
-              <div className="grid mb-[20px]">
-                <span className="block mb-[5px]">E-mail</span>
-                <input
-                  type="email"
-                  className="p-[10px] border border-black rounded"
-                  name="email"
-                />
-              </div>
+                <div className="grid mb-[20px]">
+                  <span className="block mb-[5px]">E-mail</span>
+                  <input
+                    type="email"
+                    className="p-[10px] border border-black rounded"
+                    name="email"
+                  />
+                </div>
 
-              <div className="grid mb-[20px]">
-                <span className="block mb-[5px]">Phone Number</span>
-                <input
-                  type="text"
-                  className="p-[10px] border border-black rounded"
-                  name="phone number"
-                />
-              </div>
+                <div className="grid mb-[20px]">
+                  <span className="block mb-[5px]">Phone Number</span>
+                  <input
+                    type="text"
+                    className="p-[10px] border border-black rounded"
+                    name="phone number"
+                  />
+                </div>
 
-              <div className="grid mb-[20px]">
-                <span className="block mb-[5px]">Subject</span>
-                <input
-                  type="text"
-                  className="p-[10px] border border-black rounded"
-                  name="subject"
-                />
-              </div>
+                <div className="grid mb-[20px]">
+                  <span className="block mb-[5px]">Subject</span>
+                  <input
+                    type="text"
+                    className="p-[10px] border border-black rounded"
+                    name="subject"
+                  />
+                </div>
 
-              <div className="grid mb-[20px]">
-                <span className="block mb-[5px]">Your message</span>
-                <textarea className="p-[10px] border border-black rounded" name="message"></textarea>
-              </div>
+                <div className="grid mb-[20px]">
+                  <span className="block mb-[5px]">Your message</span>
+                  <textarea
+                    className="p-[10px] border border-black rounded"
+                    name="message"
+                  ></textarea>
+                </div>
 
-              <button type="submit" className="p-[10px_40px] bg-black text-white">
-                Send
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  className="p-[10px_40px] bg-black text-white"
+                >
+                  Send
+                </button>
+              </form>
             </div>
 
             <div className="w-full h-[300px] md:h-[520px] bg-black">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7078143256363!2d3.4215685767848716!3d6.431567624221139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52c2f772e5d%3A0x3610eb3887047093!2s33a%20Akin%20Adesola%20St%2C%20Victoria%20Island%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1696942397463!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253482.16777140708!2d3.2327304628374303!3d6.93131415782815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bcf83b12c3da9%3A0x42d26491046aa8a4!2sVeenocks%20Ltd!5e0!3m2!1sen!2sng!4v1724824923752!5m2!1sen!2sng"
                 className="w-full h-full"
-                style={{border: '0'}}
+                style={{ border: "0" }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

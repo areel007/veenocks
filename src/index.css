@@ -150,7 +150,7 @@
 }
 
 .our__background__title:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 120%;
   left: 0;

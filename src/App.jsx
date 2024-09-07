@@ -17,6 +17,18 @@ import FactoryGridImg4 from "./assets/images/factory_grid4.jpg";
 import FactoryGridImg5 from "./assets/images/factory_grid5.jpg";
 import FactoryGridImg6 from "./assets/images/factory_grid6.jpg";
 import Contacts from "./pages/Contacts";
+import { PressReleases } from "./pages/media/press-releases";
+import { Afrixim } from "./pages/media/afrixim";
+import { News } from "./pages/media/news";
+import { Events } from "./pages/media/events";
+import { CMSLogin } from "./pages/cms";
+import PrivateRoute from "./layouts/PrivateRoute.jsx";
+import { Dashboard } from "./pages/cms/dashboard.jsx";
+import { CMSHome } from "./pages/cms/home.jsx";
+import { CMSUsers } from "./pages/cms/users.jsx";
+import { CMSAboutUs } from "./pages/cms/about-us.jsx";
+import { CMSFactory } from "./pages/cms/factory.jsx";
+import { CMSMedia } from "./pages/cms/media.jsx";
 
 function App() {
   const [submenu, setSubmenu] = useState(null);
@@ -103,11 +115,29 @@ function App() {
     },
     {
       name: "products",
-      to: "",
+      to: "#",
       subMenu: [
         {
-          name: "Posmoreti",
+          name: "Floor & Wall Tiles",
           to: "https://posmoreti.com/tiles",
+        },
+      ],
+    },
+    {
+      name: "media",
+      to: "#",
+      subMenu: [
+        {
+          name: "News",
+          to: "/news",
+        },
+        {
+          name: "Events",
+          to: "/events",
+        },
+        {
+          name: "Press Releases",
+          to: "/press-releases",
         },
       ],
     },
@@ -139,7 +169,6 @@ function App() {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379469/posmoreti/11-IBU-OFFICE-P.jpg?_i=AA",
       name: "river",
       to: "https://posmoreti.com/river",
-      
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379465/posmoreti/13-Evory-Living-P.jpg?_i=AA",
@@ -224,6 +253,27 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/factory" element={<Factory gridImages={gridImages} />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/press-releases" element={<PressReleases />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/afrixim" element={<Afrixim />} />
+        <Route path={"/cms/login"} element={<CMSLogin />} />
+        <Route
+          path="/cms/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        >
+          <Route path="/cms/dashboard" element={<CMSHome />} />
+          <Route path="/cms/dashboard/users" element={<CMSUsers />} />
+          <Route path="/cms/dashboard/home" element={<CMSHome />} />
+          <Route path="/cms/dashboard/about-us" element={<CMSAboutUs />} />
+          <Route path="/cms/dashboard/factory" element={<CMSFactory />} />
+          <Route path="/cms/dashboard/media" element={<CMSMedia />} />
+        </Route>
+        <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
       <AppFooter />
     </Router>

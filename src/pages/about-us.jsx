@@ -1,20 +1,44 @@
 import styles from "../assets/css.modules/AboutUs.module.css";
-import Banner from "../assets/images/about-banner.jpg"
-import { useEffect } from "react";
+import Banner from "../assets/images/about-banner.jpg";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function AboutUs() {
   const dynamicTitle = "Veenocks - About";
 
+  const [fromEarthTitle, setFromEarthTitle] = useState("");
+  const [fromEarthContent, setFromEarthContent] = useState("");
+  const [ourVision, setOurVision] = useState("");
+  const [backgroundTitle, setBackgroundTitle] = useState("");
+  const [backgroundContent, setBackgroundContent] = useState("");
+
+  const getAboutUs = async () => {
+    const { data } = await axios.get(
+      "https://veenocks-cms.onrender.com/api/about-us"
+    );
+
+    setFromEarthTitle(data.aboutUs.fromEarth.title);
+    setFromEarthContent(data.aboutUs.fromEarth.content);
+    setOurVision(data.aboutUs.ourVision);
+    setBackgroundTitle(data.aboutUs.background.title);
+    setBackgroundContent(data.aboutUs.background.content);
+  };
+
   useEffect(() => {
     document.title = dynamicTitle;
+    getAboutUs();
   }, []);
   return (
     <>
       {/* Banner */}
       <div
-        className={`w-full h-[300px] md:h-[500px] 2xl:h-[520px] relative bg-fixed ${styles.about__us__banner}`}
+        className={`w-full h-[300px] md:h-[500px] 2xl:h-[500px] relative bg-fixed ${styles.about__us__banner}`}
       >
-        <img src={Banner} alt="veenocks" className="absolute w-full h-full top-0 left-0 object-cover" />
+        <img
+          src={Banner}
+          alt="veenocks"
+          className="absolute w-full h-full top-0 left-0 object-cover"
+        />
         <div className="absolute top-0 left-0 z-[10] bg-black w-full h-full opacity-[.5]"></div>
         <div className="w-[90%] xl:w-[1100px] mx-auto h-full flex justify-center flex-col relative z-[11]">
           <h3 className="text-[30px] md:text-[42px] font-[600] text-white">
@@ -27,7 +51,7 @@ export default function AboutUs() {
       <div className="py-[40px] md:py-[100px]">
         <div className="w-[90%] xl:w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-[50px]">
           <h3 className="text-[28px] md:text-[35px] font-[700] leading-[1]">
-            From Earth to Elegance
+            {fromEarthTitle}
           </h3>
           <div>
             <p className="text-[18px] md:text-[20px] mb-[20px]">
@@ -72,9 +96,7 @@ export default function AboutUs() {
             Our vision
           </p>
           <p className="font-[600] text-center text-[16px] md:text-[18px] text-black leading-[1.4]">
-            To be the benchmark for global quality standards for tiles
-            manufacturing and the producer of choice for quality tiles in
-            Africa.
+            {ourVision}
           </p>
         </div>
       </div>
@@ -82,39 +104,17 @@ export default function AboutUs() {
       {/*  */}
       <div className="py-[40px] md:py-[100px]">
         <div className="w-[90%] xl:w-[1100px] mx-auto">
-          
           <div className="grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-[50px]">
             <div>
-            <div className="mb-[30px] 2xl:mb-[60px]">
-            <span className="our__background__title">Our Background</span>
-          </div>
-            <h3 className="text-[28px] md:text-[35px] font-[700] leading-[1]">
-              A Heritage of Excellence
-            </h3>
+              <div className="mb-[30px] 2xl:mb-[60px]">
+                <span className="our__background__title">Our Background</span>
+              </div>
+              <h3 className="text-[28px] md:text-[35px] font-[700] leading-[1]">
+                {backgroundTitle}
+              </h3>
             </div>
 
-            <p className="text-[14px] md:text-[16px] leading-[1.6]">
-              Veenocks, is a member company of R28 Group, a growing private
-              investment holding company created in Nigeria in 2007 and has over
-              the years secured and consolidated a diversified shareholding
-              portfolio, with subsidiaries and investments cutting across a wide
-              range of industries and asset classes in Construction, Real Estate
-              Development, Oil & Gas, Energy & Infrastructure Services,
-              Aviation, Manufacturing, Retail, and basic industry start-ups. R28
-              is currently involved in stimulating and guiding the growth of its
-              constituent companies.
-              <br />
-              <br />
-              R28 is dedicated to empowering and driving the growth of its
-              subsidiaries, fueling their success through strategic guidance and
-              support.
-              <br />
-              <br />
-              The Holding company has a long-term investment perspective and has
-              grown organically through acquisitions. The company makes most
-              investments using its own equity capital, which allows optimum
-              flexibility in terms of financing, and quick decision-making.
-            </p>
+            <p dangerouslySetInnerHTML={{ __html: backgroundContent }} />
           </div>
         </div>
       </div>
