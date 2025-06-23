@@ -177,7 +177,7 @@ export default function Home({ settings, heroImages, cardDetails }) {
             className="text-center mb-[40px]"
           />
           <a
-            href="https://posmoreti.com/who-we-are"
+            href="https://veramis.com/who-we-are"
             className="block w-[min-content] whitespace-nowrap mx-auto"
             target="_blank"
             rel="noopener noreferrer"
@@ -197,7 +197,7 @@ export default function Home({ settings, heroImages, cardDetails }) {
 
         <div className="w-full mt-[40px] mb-[40px] md:mb-[100px]">
           <a
-            href="https://posmoreti.com/tiles/"
+            href="https://veramis.com/tiles/"
             className="mx-auto w-[min-content] whitespace-nowrap flex  border border-black"
             target="_blank"
             rel="noopener noreferrer"

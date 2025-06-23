@@ -92,6 +92,10 @@ export default function AppFooter() {
                   <span>
                     <b className="text-gray-500">E:</b> {footer.email}
                   </span>
+                  <br />
+                  <span>
+                    <b className="text-gray-500">Whatsapp:</b> +234 909 888 9027
+                  </span>
                 </p>
               </div>
             </div>

@@ -85,9 +85,14 @@ export const PressReleases = () => {
                   className="block mb-[20px] w-full object-cover h-[500px]"
                 />
 
-                <span className="italic text-[14px] block mb-[20px]">
+                {/* <span className="italic text-[14px] block mb-[20px]">
                   {item.subtitle}
-                </span>
+                </span> */}
+
+                <span
+                  className="italic text-[14px] block mb-[20px]"
+                  dangerouslySetInnerHTML={{ __html: item.subtitle }}
+                />
 
                 <p
                   dangerouslySetInnerHTML={{
@@ -95,7 +100,7 @@ export const PressReleases = () => {
                       ? item.content
                       : item.content.substring(0, 300),
                   }}
-                  className="mb-[10px]"
+                  className="mb-[10px] list-decimal"
                 />
 
                 <span

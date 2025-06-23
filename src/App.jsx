@@ -119,7 +119,7 @@ function App() {
       subMenu: [
         {
           name: "Floor & Wall Tiles",
-          to: "https://posmoreti.com/tiles",
+          to: "https://veramis.com/tiles",
         },
       ],
     },
@@ -153,42 +153,42 @@ function App() {
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379481/posmoreti/9-BOSTON-KITCHEN-P.jpg?_i=AA",
       name: "eko",
-      to: "https://posmoreti.com/boston/",
+      to: "https://veramis.com/boston/",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379477/posmoreti/3-SINAGE-BATHROOM-P.jpg?_i=AA",
       name: "sinage",
-      to: "https://posmoreti.com/boston/sinage",
+      to: "https://veramis.com/boston/sinage",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379473/posmoreti/7-IBU-Lobby-P.jpg?_i=AA",
       name: "ibu",
-      to: "https://posmoreti.com/ibu",
+      to: "https://veramis.com/ibu",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379469/posmoreti/11-IBU-OFFICE-P.jpg?_i=AA",
       name: "river",
-      to: "https://posmoreti.com/river",
+      to: "https://veramis.com/river",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379465/posmoreti/13-Evory-Living-P.jpg?_i=AA",
       name: "ebony",
-      to: "https://posmoreti.com/ebony",
+      to: "https://veramis.com/ebony",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379461/posmoreti/17-Smoke-Grey-P.jpg?_i=AA",
       name: "smoke",
-      to: "https://posmoreti.com/smoke-2/",
+      to: "https://veramis.com/smoke-2/",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379447/posmoreti/12-Ferdey-Kirchen-P.jpg?_i=AA",
       name: "peeble",
-      to: "https://posmoreti.com/peeble/",
+      to: "https://veramis.com/peeble/",
     },
     {
       img: "https://res.cloudinary.com/dmyoyc4bb/image/upload/c_scale,w_448,h_318,dpr_1.5/f_auto,q_auto/v1690379456/posmoreti/2-CARRARA-KITCHEN-P.jpg?_i=AA",
       name: "carrara",
-      to: "https://posmoreti.com/carrara",
+      to: "https://veramis.com/carrara",
     },
   ];
 

@@ -78,7 +78,9 @@ export default function LandingCarousel({ settings, heroImages }) {
               />
               <div className="absolute bottom-0 left-0 w-full">
                 <div className="w-full h-full bg-black opacity-[.50] absolute z-[20] bottom-0 left-0 group-hover:opacity-[1]"></div>
-                <div className="text-white relative z-[30] p-[30px]">{_heroImage.name}</div>
+                <div className="text-white relative z-[30] p-[30px]">
+                  {_heroImage.name}
+                </div>
               </div>
             </Link>
           );
