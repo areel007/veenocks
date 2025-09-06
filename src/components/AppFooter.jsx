@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import Logo from "../assets/images/veenocks-logo-white.png";
+import Logo from "../assets/images/veenocks_logo_reverse.svg";
 import { useState, useEffect } from "react";
 import axios from "axios";
 

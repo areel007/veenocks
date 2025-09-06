@@ -1,7 +1,7 @@
 // import { a } from "react-router-dom";
 import PropTypes from "prop-types";
 import style from "../assets/css.modules/AppHeader.module.css";
-import Logo from "../assets/images/veenocks-logo.png";
+import Logo from "../assets/images/veenocks_weblogo.png";
 import { Link, useLocation } from "react-router-dom";
 
 export default function AppHeader({ menu, openMobileMenu, isMobileMenuOut }) {
